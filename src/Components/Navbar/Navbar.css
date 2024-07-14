@@ -1,0 +1,22 @@
+/* .navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0px 1px 3px -2px black;
+} */
+
+.nav-login-cart button:hover{
+    background-color: #f3f3f3;
+    color: #333;
+}
+.nav-login-cart button:active{
+    background-color: #f3f3f3;
+    color: #333;
+}
+ .Nav-menu hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background:#ff4141;
+}
