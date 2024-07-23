@@ -17,7 +17,7 @@ const ShopCategory = (props) => {
 
   return (
     <div className='shop-category'>
-      <img src={props.banner}  alt="" />
+      <img className='shopcategory-banner' src={props.banner}  alt="" />
       <div className="shopcategory-indexSort">
         <p>
           <span>Showing 1-{filteredProducts.length}</span> out of {all_product.length} products
@@ -37,6 +37,9 @@ const ShopCategory = (props) => {
             old_price={item.old_price}
           />
         ))}
+      </div>
+      <div className="shopcategory-loadmore">
+        Explore More
       </div>
     </div>
   );

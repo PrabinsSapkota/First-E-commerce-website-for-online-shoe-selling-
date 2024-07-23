@@ -1,10 +1,3 @@
-/* .navbar{
-    display: flex;
-    justify-content: space-around;
-    padding: 16px;
-    box-shadow: 0px 1px 3px -2px black;
-} */
-
 .nav-login-cart button:hover{
     background-color: #f3f3f3;
     color: #333;
@@ -13,6 +6,7 @@
     background-color: #f3f3f3;
     color: #333;
 }
+
  .Nav-menu hr{
     border: none;
     width: 80%;
@@ -20,3 +14,113 @@
     border-radius: 10px;
     background:#ff4141;
 }
+.nav-dropdown{
+    display: none;
+}
+
+@media(max-width: 1280px){
+    .navbar{
+        padding: 12px 50px;
+    }
+    .nav-logo img{
+        width: 40px;
+        height: 40px;
+
+    }
+    .nav-logo p{
+        font-size: 25px;
+
+    }
+    .Nav-menu{
+        gap: 30px;
+        font-size: 16px;
+    }
+    .nav-login-cart{
+        gap: 30px;
+    }
+    .nav-login-cart button{
+        width: 120px;
+        height: 45px;
+        font-size: 16px;
+    }
+    .nav-cart-count{
+        margin-left: -40px;
+        font-size: 12px;
+    }
+
+}
+@media(max-width: 1024px){
+    .navbar{
+        padding: 12px 30px;
+    }
+    .Nav-menu{
+        gap: 25px;
+        font-size: 14px;
+    }
+    .nav-login-cart button{
+        width: 80px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .nav-login-cart img{
+        width: 30px;
+    }
+    .nav-cart-count{
+        margin-left: 18px;
+        height: 18px;
+        
+    }
+}
+@media(max-width: 800px){
+    .navbar{
+        padding: 10px 0px;
+    }
+  
+    .Nav-menu{
+        display:none;
+        height: 80px;
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        justify-content: center;
+        top: 75px;
+    }
+    .nav-menu-visible{
+        display: flex;
+    }
+    .nav-dropdown.open{
+        transform: rotate(90deg);
+    }
+}
+@media(max-width:500px){
+    .navbar{
+        padding: 8px 0px;
+    }
+    .nav-logo{
+        transform: scale(0.8);
+
+    }
+   
+    /* .nav-dropdown{
+        display: block;
+        width: 30px;
+        rotate: -90deg;
+        transition: 0.5s;
+ 
+     } */
+.Nav-menu{
+            display:none;
+        height: 70px;
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        justify-content: center;
+        top: 75px;
+    }
+    .nav-login-cart{
+        transform: scale(0.8);
+        
+    }
+}
+
+
